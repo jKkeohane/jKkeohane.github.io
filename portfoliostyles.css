@@ -14,6 +14,8 @@ body {
   float: center;
   height: 20vh;
   position: fixed;
+  top: 0;
+  z-index: 999;  
 }
 
 /* CSS styles for section 1 */
