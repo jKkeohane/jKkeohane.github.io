@@ -11,14 +11,6 @@ body {
   float: left;
 }
 
-#section0 {
-  color: #fff;
-  font-size: x-large;
-  position: relative;
-  width: 75%;
-  padding-bottom: 0%; 
-}
-
 #section1 {
   box-sizing: border-box;
   width: 75%;
@@ -106,6 +98,14 @@ body {
   height: 5%;
   top: 0;
   z-index: 999;  
+}
+
+.header h2 {
+  color: #fff;
+  font-size: x-large;
+  position: relative;
+  width: 75%;
+  padding-bottom: 0%; 
 }
 
 #map {
