@@ -9,13 +9,19 @@ body {
   float: left;
 }
 
-.banner {
+.header {
   width: 75%;
   float: center;
   height: 20vh;
-  position: fixed;
   top: 0;
   z-index: 999;  
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 /* CSS styles for section 1 */
