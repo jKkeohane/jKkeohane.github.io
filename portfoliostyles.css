@@ -49,6 +49,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: white;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -61,7 +62,7 @@ a {
     background-image: initial;
     background-position-x: top;
     background-position-y: center;
-    background-size: 100% 5%;
+    background-size: 100% 10%;
     background-repeat-x: initial;
     background-repeat-y: initial;
     background-attachment: initial;
