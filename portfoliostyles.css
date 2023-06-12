@@ -9,32 +9,7 @@ body {
   float: left;
 }
 
-.header {
-  width: 75%;
-  float: center;
-  height: 20vh;
-  top: 0;
-  z-index: 999;  
-}
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px 16px;
-    background: #555;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: #6b2c90;
-}
 
 /* CSS styles for section 1 */
 #section1 {
@@ -54,6 +29,14 @@ body {
   padding: 20%;
 }
 
+.header {
+  width: 75%;
+  float: center;
+  height: 20vh;
+  top: 0;
+  z-index: 999;  
+}
+
 #map {
   width: 100%;
   height: 100%;
@@ -67,4 +50,22 @@ body {
 
 a {
   color: white;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 16px;
+    background: #555;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #6b2c90;
 }
