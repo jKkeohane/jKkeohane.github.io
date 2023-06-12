@@ -95,7 +95,7 @@ body {
 .header {
   width: 75%;
   float: center;
-  height: 5%;
+  height: 15%;
   top: 0;
   z-index: 999;  
 }
