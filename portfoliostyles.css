@@ -79,7 +79,7 @@ body {
 }
 
 .content {
-	padding-left: 100%;
+	position: center;
 }
 
 /* CSS styles for section 2 */
