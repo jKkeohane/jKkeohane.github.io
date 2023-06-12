@@ -87,9 +87,9 @@ body {
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif; display: flex;
 	min-height: 100vh;
+	background: none;
 	align-items: center;
 	justify-content: center;
-	background: none;
 }
 
 /* CSS styles for section 2 */
