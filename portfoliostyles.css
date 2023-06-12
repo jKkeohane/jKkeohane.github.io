@@ -55,17 +55,18 @@ a {
 .sticky {
   position: fixed;
   top: 0;
+  height: 5%;
   width: 100%;
     background: #555;
     background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
+    background-position-x: top;
+    background-position-y: center;
+    background-size: 100% 5%;
     background-repeat-x: initial;
     background-repeat-y: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
     background-color: #6b2c90;
-  height: 5%;
+  
 }
