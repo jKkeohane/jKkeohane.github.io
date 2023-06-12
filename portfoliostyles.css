@@ -1,6 +1,8 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   background: linear-gradient(to bottom, #ff33cc, #6b2c90);
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -13,6 +15,7 @@ body {
   color: #fff;
   font-size: x-large;
   position: relative;
+  width: 75%;
   padding-bottom: 0%; 
 }
 
