@@ -15,7 +15,43 @@ body {
 #section1 {
   color: black;
   padding: 20%;
+  font-size: 80%;
 }
+
+
+.tit {
+  position: relative;
+}
+
+.tit h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.tit h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.tit h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100%
 
 /* CSS styles for section 2 */
 #section2 {
