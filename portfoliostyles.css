@@ -12,12 +12,10 @@ body {
 #section0 {
   color: #fff;
   font-size: 8em;
-  position: absolute;
+  position: relative;
 }
 
 .title {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
