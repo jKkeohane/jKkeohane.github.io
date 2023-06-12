@@ -17,6 +17,8 @@ body {
 
 .title {
   box-sizing: border-box;
+  width: 75%;
+  padding: 20%;
   font-family: "Poppins", sans-serif;
 }
 
