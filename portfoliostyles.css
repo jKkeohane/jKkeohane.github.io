@@ -128,9 +128,9 @@ a {
 .sticky {
   position: fixed;
   top: 0;
-  height: 5%;
+  height: 0%;
   width: 100%;
-    background: #555;
+    background: #03a9f4;
     background-image: initial;
     background-position-x: top;
     background-position-y: center;
@@ -140,6 +140,6 @@ a {
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: #6b2c90;
+    background-color: #03a9f4;
   
 }
