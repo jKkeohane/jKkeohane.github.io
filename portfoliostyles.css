@@ -21,7 +21,8 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  background: #6b2c90;
 }
 
 /* CSS styles for section 1 */
