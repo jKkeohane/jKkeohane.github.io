@@ -56,7 +56,6 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 5%;
     background: #555;
     background-image: initial;
     background-position-x: initial;
@@ -68,4 +67,5 @@ a {
     background-origin: initial;
     background-clip: initial;
     background-color: #6b2c90;
+  height: 5%;
 }
