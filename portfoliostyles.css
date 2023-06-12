@@ -32,6 +32,10 @@ body {
   position: relative;
 }
 
+.title {
+  text-align: center;
+}
+
 .title h1 {
   color: #fff;
   font-size: 8em;
