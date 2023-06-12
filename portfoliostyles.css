@@ -78,6 +78,10 @@ body {
 	}
 }
 
+.content {
+	padding-left: 40%;
+}
+
 /* CSS styles for section 2 */
 #section2 {
   width: 75%;
