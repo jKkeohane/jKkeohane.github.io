@@ -35,7 +35,6 @@ body {
 .title h1 {
   color: #fff;
   font-size: 8em;
-  position: absolute;
   transform: translate(-50%, -50%);
 }
 
