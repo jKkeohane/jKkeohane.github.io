@@ -23,7 +23,7 @@ body {
 }
 
 /* CSS styles for section 1 */
-#section1 {{
+#section1 {
   display: flex;
   min-height: 100vh;
   align-items: center;
