@@ -11,7 +11,7 @@ body {
 
 #section0 {
   color: #fff;
-  font-size: 20%;
+  font-size: x-large;
   position: relative;
   padding-bottom: 0%; 
 }
@@ -21,6 +21,9 @@ body {
   width: 75%;
   padding-top: 0%; 
   font-family: "Poppins", sans-serif;
+}
+  
+#section1 {  
   display: flex;
   min-height: 100vh;
   align-items: center;
