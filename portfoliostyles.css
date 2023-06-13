@@ -175,6 +175,9 @@ a {
   	width: 75%;
   	padding-bottom: 0%; 
 }
+p:not(:last-child) {
+    margin-right: 5%;
+}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
 	position: fixed;
