@@ -185,3 +185,10 @@ a {
 	background-color: #03a9f4;
   
 }
+
+
+body {
+	align-items: center;
+  justify-content: center;
+	width: 50%;
+}
