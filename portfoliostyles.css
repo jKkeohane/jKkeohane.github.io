@@ -26,6 +26,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
 .content {
 	position: relative;
 }
@@ -112,6 +117,7 @@ body {
 		justify-content: right;
 	}
 }
+
 
 /* CSS styles for section 2 */
 #section2 {
