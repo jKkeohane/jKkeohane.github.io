@@ -1,13 +1,10 @@
 @import
 	url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	background: linear-gradient(to bottom, #ff33cc, #6b2c90);
-	align-items: center;
-	justify-content: center;
-	width: 60%;
-	margin-right: 20%;
-  	margin-left: 20%;
+  font-family: Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff33cc, #6b2c90);
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -188,4 +185,13 @@ a {
 	background-clip: initial;
 	background-color: #03a9f4;
   
+}
+
+
+body {
+	align-items: center;
+  	justify-content: center;
+	width: 60%;
+	margin-right: 20%;
+  	margin-left: 20%;
 }
