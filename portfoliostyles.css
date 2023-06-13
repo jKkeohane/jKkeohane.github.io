@@ -32,11 +32,13 @@ body {
 	position: relative;
 }
 
-.content h1 {
-	color: #fff;
-	font-size: 8em;
-	position: absolute;
-	transform: translate(-50%, -50%);
+@media (max-width: 768px) {
+	.content h1 {
+		color: #fff;
+		font-size: 8em;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .content h1:nth-child(1) {
@@ -80,16 +82,17 @@ body {
 	}
 }
 
-
-.content {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif; display: flex;
-	min-height: 100vh;
-	background: none;
-	align-items: right;
-	justify-content: right;
+@media (max-width: 768px) {
+	.content {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif; display: flex;
+		min-height: 100vh;
+		background: none;
+		align-items: right;
+		justify-content: right;
+	}
 }
 
 /* CSS styles for section 2 */
