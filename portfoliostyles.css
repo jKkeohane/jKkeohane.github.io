@@ -141,8 +141,7 @@ body {
 .header h2 {
 	  color: #03a9f4;
 	  font-size: x-large;
-	  float: left;
-	  position: left;
+	  position: relative;
 	  width: 75%;
 	  padding-bottom: 0%; 
 }
