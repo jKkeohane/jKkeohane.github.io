@@ -132,7 +132,7 @@ body {
 
 .header {
   width: 75%;
-  float: center;
+  float: left;
   height: 15%;
   top: 0;
   z-index: 999;  
