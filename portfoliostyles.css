@@ -151,6 +151,13 @@ body {
 	justify-content: center;
 }
 
+a {
+  	text-decoration: none;
+  	position: relative;
+  	width: 75%;
+  	padding-bottom: 0%; 
+}
+
 /* CSS styles for section 4 */
 #section4 {
   width: 75%;
@@ -158,12 +165,6 @@ body {
   padding: 5%;
 }
 
-a {
-  	text-decoration: none;
-  	position: relative;
-  	width: 75%;
-  	padding-bottom: 0%; 
-}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
 	position: fixed;
