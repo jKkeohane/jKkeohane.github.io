@@ -160,28 +160,28 @@ body {
 
 a {
   	text-decoration: none;
-	color: #03a9f4;
-  	font-size: large;
   	position: relative;
   	width: 75%;
   	padding-bottom: 0%; 
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
-  top: 0;
-  height: 0%;
-  width: 100%;
-    background: #03a9f4;
-    background-image: initial;
-    background-position-x: top;
-    background-position-y: center;
-    background-size: 100% 20%;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: #03a9f4;
+	position: fixed;
+	top: 0;
+	color: #03a9f4;
+  	font-size: large;
+  	height: 0%;
+	width: 100%;
+	background: #03a9f4;
+	background-image: initial;
+	background-position-x: top;
+	background-position-y: center;
+	background-size: 100% 20%;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: #03a9f4;
   
 }
