@@ -44,7 +44,7 @@ li:not(:last-child) {
 .content h1 {
 	color: #fff;
 	font-size: 8em;
-	position: absolute;
+	position: center;
 	transform: translate(-50%, -50%);
 }
 
@@ -52,7 +52,7 @@ li:not(:last-child) {
 	.content h1 {
 		color: #fff;
 		font-size: 8em;
-		position: absolute;
+		position: center;
 		transform: translate(-50%, -50%);
 	}
 }
