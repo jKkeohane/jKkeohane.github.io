@@ -63,7 +63,7 @@ li:not(:last-child) {
 }
 
 .content h1:nth-child(2) {
-	color: #03a9f4;
+	color: #009900;
 	animation: animate 4s ease-in-out infinite;
 }
 
