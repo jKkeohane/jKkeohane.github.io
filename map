@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Circle Markers with Popups</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 50%;
+      width: 80%
+    }
+    .legend {
+      line-height: 18px;
+      color: #555;
+    }
+    .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script>
+    // Create a map instance
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    // Add a tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18,
+    }).addTo(map);
+
+    // Define your coordinates, factors, and popup content
+    var coordinates = [
+      { lat: 51.5, lon: -0.1, factor: 'A', popupContent: 'Marker A' },
+      { lat: 51.51, lon: -0.12, factor: 'B', popupContent: 'Marker B' },
+      { lat: 51.49, lon: -0.08, factor: 'C', popupContent: 'Marker C' }
+    ];
+
+    // Create a legend
+    var legend = L.control({ position: 'topright' });
+
+    legend.onAdd = function (map) {
+      var div = L.DomUtil.create('div', 'legend');
+      div.innerHTML += '<h4>Legend</h4>';
+      div.innerHTML += '<i style="background: red;"></i>A<br>';
+      div.innerHTML += '<i style="background: blue;"></i>B<br>';
+      div.innerHTML += '<i style="background: green;"></i>C<br>';
+      return div;
+    };
+
+    legend.addTo(map);
+
+    // Add circle markers to the map with popups
+    for (var i = 0; i < coordinates.length; i++) {
+      var coord = coordinates[i];
+      var marker = L.circleMarker([coord.lat, coord.lon], { color: getColor(coord.factor) }).addTo(map);
+      marker.bindPopup(coord.popupContent);
+    }
+
+    // Function to determine marker color based on factor
+    function getColor(factor) {
+      switch (factor) {
+        case 'A':
+          return 'red';
+        case 'B':
+          return 'blue';
+        case 'C':
+          return 'green';
+        default:
+          return 'gray';
+      }
+    }
+  </script>
+</body>
+</html>
