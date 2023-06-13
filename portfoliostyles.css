@@ -2,7 +2,7 @@
 	url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: linear-gradient(to bottom, #ff33cc, #6b2c90);
+  background: linear-gradient(to bottom, #fff, #6b2c90);
   align-items: center;
   justify-content: center;
 	margin-right: 10%;
@@ -59,7 +59,7 @@ li:not(:last-child) {
 
 .content h1:nth-child(1) {
 	color: transparent;
-	-webkit-text-stroke: 2px #03a9f4;
+	-webkit-text-stroke: 2px #009900;
 }
 
 .content h1:nth-child(2) {
@@ -147,7 +147,7 @@ li:not(:last-child) {
 }
 
 .header h2 {
-  color: #03a9f4;
+  color: #009900;
   font-size: x-large;
   position: relative;
   width: 75%;
@@ -179,11 +179,11 @@ a {
 .sticky {
 	position: fixed;
 	top: 0;
-	color: #03a9f4;
+	color: #009900;
   	font-size: large;
   	height: 0%;
 	width: 100%;
-	background: #03a9f4;
+	background: #009900;
 	background-image: initial;
 	background-position-x: top;
 	background-position-y: center;
@@ -193,6 +193,6 @@ a {
 	background-attachment: initial;
 	background-origin: initial;
 	background-clip: initial;
-	background-color: #03a9f4;
+	background-color: #009900;
   
 }
