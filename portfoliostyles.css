@@ -143,6 +143,14 @@ body {
   padding-bottom: 0%; 
 }
 
+.fa-ul {
+  color: #03a9f4;
+  font-size: x-large;
+  position: relative;
+  width: 75%;
+  padding-bottom: 0%; 
+}
+
 #map {
 	display: flex;
   	width: 75%;
