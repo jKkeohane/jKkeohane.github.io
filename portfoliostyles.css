@@ -2,7 +2,7 @@
 	url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: linear-gradient(to bottom, #fff, #ff66cc);
+  background: linear-gradient(to bottom, #fff, #ff00ff);
   align-items: center;
   justify-content: center;
 	margin-right: 10%;
