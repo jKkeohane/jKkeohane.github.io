@@ -143,14 +143,6 @@ body {
   padding-bottom: 0%; 
 }
 
-.fa-ul {
-  color: #03a9f4;
-  font-size: x-large;
-  position: relative;
-  width: 75%;
-  padding-bottom: 0%; 
-}
-
 #map {
 	display: flex;
   	width: 75%;
@@ -167,8 +159,12 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  	text-decoration: none;
+	color: #03a9f4;
+  	font-size: large;
+  	position: relative;
+  	width: 75%;
+  	padding-bottom: 0%; 
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
