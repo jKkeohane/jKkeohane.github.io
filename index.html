@@ -109,9 +109,15 @@
   </div>
   <div id="map"></div>
   <script type="text/javascript">  
-    var port_map = L.map('map').setView([38.57, -94.71], 4);
-    var geojsonLayer = new L.GeoJSON.AJAX("leaflet.geojson");       
-    geojsonLayer.addTo(port_map);
+    
+    var port_map = L.map('map',{
+      center:[0,50],
+      zoom:2
+    });
+    
+    var json = new L.LayerGroup();
+    L.geojson(leaflet).addTo(json);       
+    
   </script>
   <div id="section4" class="main">
       <p>Every study offered me the opportunity to add to my existing skillset through development and new learning as well as enhancing my interest and awareness of a range of fields and topics.
