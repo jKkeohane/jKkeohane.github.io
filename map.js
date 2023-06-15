@@ -1,10 +1,11 @@
   // Create a map instance
-  var map = L.map('map').setView([0, 0], 5);
+  var port_map = L.map('map').setView([0, 0], 5);
 
   // Add a tile layer
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright_nolabels/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> contributors'
-  }).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(port_map);
 
   // Define your coordinates, factors, and popup content
   var coordinates = [
@@ -62,7 +63,7 @@
   // Create a legend
   var legend = L.control({ position: 'topright' });
 
-  legend.onAdd = function (map) {
+  legend.onAdd = function (port_map) {
     var div = L.DomUtil.create('div', 'legend');
     div.innerHTML += '<h4>Legend</h4>';
     div.innerHTML += '<i style="background: pink;"></i>University of Bristol<br>';
@@ -70,12 +71,12 @@
     return div;
   };
 
-  legend.addTo(map);
+  legend.addTo(port_map);
 
   // Add circle markers to the map with popups
   for (var i = 0; i < coordinates.length; i++) {
     var coord = coordinates[i];
-    var marker = L.circleMarker([coord.lat, coord.lon], { color: getColor(coord.factor) }).addTo(map);
+    var marker = L.circleMarker([coord.lat, coord.lon], { color: getColor(coord.factor) }).addTo(port_map);
     marker.bindPopup(coord.popupContent);
   }
 
