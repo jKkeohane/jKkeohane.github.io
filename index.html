@@ -106,19 +106,17 @@
     <h4>Map of case studies</h4><br><br>
   </div>
   <div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative; outline-style: none;"></div>
-  <iframe src="map.html" width="600" height="400" style="max-width: 100%; max-height: 90vh; box-sizing: border-box;">
-    <script type="text/javascript" src="leaflet.js"> </script>
-    <script type="text/javascript">
-      var port_map = L.map('map').setView([37.8, -96], 4);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(port_map);
-      var geojson = L.geoJson("leaflet.geojson");
-      geojson.on('data:loaded',function(){
-      geojson.addTo(port_map);
-      });
-    </script>
+  <script type="text/javascript">
+    var port_map = L.map('map').setView([37.8, -96], 4);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(port_map);
+    var geojson = L.geoJson("leaflet.geojson");
+    geojson.on('data:loaded',function(){
+    geojson.addTo(port_map);
+    });
+  </script>
   </iframe>
   <div id="section4" class="main">
       <p>Every study offered me the opportunity to add to my existing skillset through development and new learning as well as enhancing my interest and awareness of a range of fields and topics.
