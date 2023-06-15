@@ -122,7 +122,7 @@
             id: 'examples.map-i875mjb7'
         }).addTo(map);
 
-        $.getJSON("leaflet.geojson", function(response) {
+        $.getJSON("https://raw.githubusercontent.com/jKkeohane/jKkeohane.github.io/main/leaflet.geojson", function(response) {
             console.log("response", response);
             var geojsonLayer = new L.GeoJSON(response);
             geojsonLayer.addTo(map);    
