@@ -168,7 +168,10 @@
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
-      L.geoJson(leaflet.geojson).addTo(map);
+      var geojson = L.geoJson("leaflet.js");
+      geojson.on('data:loaded',function(){
+      geojson.addTo(map);
+      });
     </script>
   </iframe>
 
