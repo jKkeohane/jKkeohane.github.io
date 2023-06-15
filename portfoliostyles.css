@@ -156,6 +156,7 @@ li:not(:last-child) {
 
 #map {
 	display: flex;
+	width: 75%;
 }
 
 /* CSS styles for section 4 */
