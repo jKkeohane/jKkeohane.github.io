@@ -9,6 +9,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="1.3.1.leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
 </head>
   
 <body>
@@ -107,8 +108,12 @@
   </div>
     <div id="map">
     </div>
-<script src="map.js"> 
-</script>
+  <script>  
+ 
+  var port_map = L.map('map').setView([38.57, -94.71], 4);
+  var geojsonLayer = new L.GeoJSON.AJAX("leaflet.geojson");       
+geojsonLayer.addTo(port_map);
+  </script>
   <div id="section4" class="main">
       <p>Every study offered me the opportunity to add to my existing skillset through development and new learning as well as enhancing my interest and awareness of a range of fields and topics.
         The opportunity to do this through a more holistic international lens made the whole experience more exciting: navigate between each of the points to see the different skills I used, the main subject interest as well as where I covered it. 
