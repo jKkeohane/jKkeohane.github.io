@@ -1,5 +1,5 @@
   // Create a map instance
-  var port_map = L.map('map').setView([0, 0], 5);
+  var port_map = L.map('id="my-custom-map"').setView([0, 0], 5);
 
   // Add a tile layer
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
