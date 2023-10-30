@@ -109,13 +109,34 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js></script>
   
     <script>
-    var port_map = L.map('id="my-custom-map"').setView([0, 0], 5);
+    // Setup the EPSG:27700 (British National Grid) projection.
+    const crs = new L.Proj.CRS('EPSG:4326',+proj=longlat +datum=WGS84 +no_defs +type=crs' {
+        resolutions: [ 896.0, 448.0, 224.0, 112.0, 56.0, 28.0, 14.0, 7.0, 3.5, 1.75, 0.875, 0.4375, 0.21875, 0.109375 ],
+        origin: [ -238375.0, 1376256.0 ]
+    });
+ 
+    // Initialize the map.
+    const mapOptions = {
+        crs: crs,
+        minZoom: 0,
+        maxZoom: 13,
+        center: [ 50.727589, -3.541809 ],
+        zoom: 11,
+        maxBounds: [
+            [ 49.528423, -10.76418 ],
+            [ 61.331151, 1.9134116 ]
+        ],
+        attributionControl: false
+    };
+ 
+    const map = L.map('map', mapOptions);
+ 
 
     // Add a tile layer
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(port_map);
+    }).addTo(map);
 
     // Define your coordinates, factors, and popup content
     var coordinates = [
