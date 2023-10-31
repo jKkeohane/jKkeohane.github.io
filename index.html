@@ -149,7 +149,7 @@
       // Setup the EPSG:27700 (British National Grid) projection.
       const crs = new L.Proj.CRS('EPSG:4326',+proj=longlat +datum=WGS84 +no_defs +type=crs' {
           resolutions: [ 896.0, 448.0, 224.0, 112.0, 56.0, 28.0, 14.0, 7.0, 3.5, 1.75, 0.875, 0.4375, 0.21875, 0.109375 ],
-          origin: [ -238375.0, 1376256.0 ]
+          origin: [ 0,0 ]
       });
    
       // Initialize the map.
