@@ -162,7 +162,7 @@ li:not(:last-child) {
 /* CSS styles for section 4 */
 #section4 {
   width: 75%;
-  color: white;
+  color: black;
   padding: 5%;
 }
 
