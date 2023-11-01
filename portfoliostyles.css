@@ -1,14 +1,17 @@
 @import
 	url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	background: linear-gradient(to bottom, #A9E2EE, #ffe3f9);
+  font-family: Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #A9E2EE, #fff);
+  align-items: center;
+  justify-content: center;
 	margin:0 auto;
 }
 
-#banner {
-	padding: 5%;
-	float: left;
+.menu {
+  padding: 5%;
+  width: 25%;
+/*   float: left; */
 }
 
 #section1 {
