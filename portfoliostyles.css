@@ -6,6 +6,10 @@ body {
   align-items: center;
   justify-content: center;
 	margin:0 auto;
+	display:flex; 
+	flex-direction:column; 
+	justify-content:center;
+	min-height:100vh;
 }
 
 .menu {
