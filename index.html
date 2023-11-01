@@ -172,7 +172,18 @@
       { lat: 116.84049728, lon: 116.84049728, university: 'Manchester', popupContent: 'Marker VV' },
       { lat: 14.60793574, lon: 14.60793574, university: 'Manchester', popupContent: 'Marker WW' }
     ];
-  
+
+    // Function to determine marker color based on factor
+    function getColor(university) {
+      switch (university) {
+        case 'Bristol':
+          return 'pink';
+        case 'Manchester':
+          return 'green';
+        default:
+          return 'gray';
+      }
+    }
   
     // Create a legend
     var legend = L.control({ position: 'topright' });
@@ -194,17 +205,7 @@
       marker.bindPopup(coord.popupContent);
     }
   
-    // Function to determine marker color based on factor
-    function getColor(university) {
-      switch (university) {
-        case 'Bristol':
-          return 'pink';
-        case 'Manchester':
-          return 'green';
-        default:
-          return 'gray';
-      }
-    }
+    
   </script>
   <div id="section4" class="main">
       <p>Every study offered me the opportunity to add to my existing skillset through development and new learning as well as enhancing my interest and awareness of a range of fields and topics.
