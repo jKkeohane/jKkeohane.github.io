@@ -176,7 +176,7 @@
     // Create a legend
     var legend = L.control({ position: 'topright' });
   
-    legend.onAdd = function (port_map) {
+    legend.onAdd = function (map) {
       var div = L.DomUtil.create('div', 'legend');
       div.innerHTML += '<h4>Legend</h4>';
       div.innerHTML += '<i style="background: pink;"></i>University of Bristol<br>';
@@ -184,12 +184,12 @@
       return div;
     };
   
-    legend.addTo(port_map);
+    legend.addTo(map);
   
     // Add circle markers to the map with popups
     for (var i = 0; i < coordinates.length; i++) {
       var coord = coordinates[i];
-      var marker = L.circleMarker([coord.lat, coord.lon], { color: getColor(coord.factor) }).addTo(port_map);
+      var marker = L.circleMarker([coord.lat, coord.lon], { color: getColor(coord.factor) }).addTo(map);
       marker.bindPopup(coord.popupContent);
     }
   
