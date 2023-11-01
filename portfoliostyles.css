@@ -105,8 +105,6 @@ li:not(:last-child) {
 	font-family: "Poppins", sans-serif; display: flex;
 	min-height: 100vh;
 	background: none;
-	align-items: right;
-	justify-content: right;
 }
 
 @media (max-width: 768px) {
@@ -117,8 +115,6 @@ li:not(:last-child) {
 		font-family: "Poppins", sans-serif; display: flex;
 		min-height: 100vh;
 		background: none;
-		align-items: right;
-		justify-content: right;
 	}
 }
 
