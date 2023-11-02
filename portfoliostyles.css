@@ -37,7 +37,9 @@ li:not(:last-child) {
 }
 
 .content {
-	position: centre;
+	align-items: center;
+	justify-content: center;
+	width: 75%;
 }
 
 
